@@ -1,6 +1,7 @@
 // webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { Script } = require("vm");
 
 module.exports = {
   mode: "development",
@@ -35,4 +36,5 @@ module.exports = {
       },
     ],
   },
+
 };

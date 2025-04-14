@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    height: 100%;
+    background-color: blue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgba(211,211,211,0.5);
+    border-radius: 25px;
+    padding: 15px;
+    max-width: fit-content;
+}
+
+.heading > h1{
+    font-size: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.searchDiv{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    padding: 3px;
+}
+
+.submit{
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    height: 30px;
+    width: 70px;
+    background-color: blue;
+    color: white;
+}
+
+.card{
+    background-color: rgba(211,211,211,0.5);
+    border-radius: 25px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+#input{
+    font-size: 32px;
+    align-self: flex-end;
+}
+
+.weatherIcon{
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+.temp{
+    font-size: 50px;
+    grid-column: 1 / 2;
+    max-width: fit-content;
+}
+
+.feel{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 10px;
+    max-height:35px;
+}
+
+.feel > img{
+    max-width: 20px;
+}
+
+.condition{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.location{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location > img {
+    max-width: 25px;
+}
+
+.humidy{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 10px;
+    max-height: 35px;
+}
+
+.humidy > img{
+    max-width: 20px;
+}
+
+.description{
+    max-width:200px;
+    grid-row: 3 / 5;
+    margin: 10px;
+}
+
+
+
+
