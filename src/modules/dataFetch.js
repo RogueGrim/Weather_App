@@ -6,7 +6,7 @@ async function getData(search){
 
         console.log(Data)
 
-        const address = Data.address
+        const address = Data.resolvedAddress
         const temperature = Data.currentConditions.temp
         const feels = Data.currentConditions.feelslike
         const humidity = Data.currentConditions.humidity
@@ -17,9 +17,7 @@ async function getData(search){
         return {address,temperature,feels,humidity,conditions,description,icon}
     }
     catch(response){
-        console.log(response)
-        throw response
-        
+        throw response        
     }
     
 

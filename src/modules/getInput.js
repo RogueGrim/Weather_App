@@ -1,6 +1,7 @@
 import { getData } from "./dataFetch"
 import { createCard } from  "./card"
 import { importIcon } from "./iconImport"
+import { createGIF } from "./gifLoader"
 
 function getInput(){
     const target = document.querySelector('.submit')
@@ -12,9 +13,10 @@ function getInput(){
             let {address,temperature,feels,humidity,conditions,description,icon} = await getData(input.value)
             createCard(address,temperature,feels,humidity,conditions,description)
             importIcon(icon)
+            createGIF(icon)
         }
         catch(error){
-            //console.log(error)
+            alert('Please Enter a valid Location')
         }
         
     })

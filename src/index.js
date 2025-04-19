@@ -1,5 +1,6 @@
 import './modules/style.css'
 import { getInput } from './modules/getInput'
+import { createGIF } from './modules/gifLoader'
 
 function pageLayout(){
 
@@ -28,5 +29,3 @@ function pageLayout(){
 
 pageLayout()
 getInput()
-
-
