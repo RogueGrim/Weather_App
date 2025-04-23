@@ -1,6 +1,6 @@
 import './modules/style.css'
 import { getInput } from './modules/getInput'
-import { createGIF } from './modules/gifLoader'
+import { backgroundLoader } from './modules/backgroundChange'
 
 function pageLayout(){
 
@@ -29,3 +29,4 @@ function pageLayout(){
 
 pageLayout()
 getInput()
+backgroundLoader()
