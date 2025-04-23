@@ -21,7 +21,9 @@ async function changeBackground(status) {
     try {
         const response = await client.videos.search({ query:status,size:'medium'});
         console.log(response);
-        container.src = response.videos[0].video_files[0].link
+        const rng = Math.floor(Math.random()*16)
+        console.log(rng)
+        container.src = response.videos[rng].video_files[0].link
     } catch (error) {
         console.error('Error fetching searched videos:', error);
     }
